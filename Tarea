@@ -1,0 +1,16 @@
+import os
+import time 
+
+nom = input("Escribe tu nombre: ")
+color = input("Escribe tu color favorito: ")
+lugar = input("Escribe tu lugar favorito: ")
+
+os.system('clear')
+
+mensaje = f"Juan fue con {nom} hacia {lugar} en un carro de color {color}"
+
+time.sleep(2)
+
+for letra in mensaje:
+    print(letra, end="", flush=True)
+    time.sleep(0.05)
